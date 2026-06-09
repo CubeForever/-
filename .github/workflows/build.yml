@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 安装 PyInstaller
-        run: pip3 install pyinstaller
+        run: pip3 install pyinstaller --break-system-packages
 
       - name: 打包 macOS 应用
         run: |
